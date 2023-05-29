@@ -17,6 +17,7 @@ $("#btn-cancel").click(function () {
 // Evento pra tratar clique do botão "ADICIONAR"
 $("form").on("submit", function (e) {
   e.preventDefault();
+
   const address = $("#address-new-img").val();
   const newItem = $('<li style="display: none"></li>');
   $(`<img src="${address}" />`).appendTo(newItem);
